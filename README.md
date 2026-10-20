@@ -2,6 +2,8 @@
 
 A wellness web app for Yoga and Contrast Therapy bookings, member rewards and daily studio operations.
 
+The standalone [Raja Uda Wellness Studio business summary](business-summary/) is in `business-summary/` and deploys separately to Vercel. See its [deployment instructions](business-summary/README.md).
+
 **[Open the live demo](https://sync-wellness.vercel.app/)**
 
 ## Features
