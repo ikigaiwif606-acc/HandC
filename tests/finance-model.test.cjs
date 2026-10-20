@@ -1,6 +1,6 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
-const F=require('../business-summary/finance-model.js');
+const F=require('../business-summary/private/finance-model.js');
 const near=(actual,expected)=>assert.ok(Math.abs(actual-expected)<1e-7,`${actual} != ${expected}`);
 
 test('prices match the six live HandC offers',()=>{

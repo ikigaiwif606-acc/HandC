@@ -1,6 +1,23 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "",
-  "outputDirectory": "."
+  "buildCommand": "node build.cjs",
+  "outputDirectory": "public",
+  "functions": {
+    "api/business.js": {"includeFiles": "private/**"}
+  },
+  "rewrites": [
+    {"source": "/business", "destination": "/api/business"},
+    {"source": "/business/", "destination": "/api/business"},
+    {"source": "/business/login", "destination": "/api/business?action=login"},
+    {"source": "/business/logout", "destination": "/api/business?action=logout"},
+    {"source": "/business/session", "destination": "/api/business?action=session"},
+    {"source": "/business/assets/:asset", "destination": "/api/business?asset=:asset"}
+  ],
+  "headers": [
+    {"source": "/business/:path*", "headers": [
+      {"key": "Cache-Control", "value": "private, no-store"},
+      {"key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive"}
+    ]}
+  ]
 }
