@@ -27,6 +27,12 @@
     .identity svg{width:29px;height:29px;flex:none}
     .identity strong{display:block;font-size:13px;font-weight:600;letter-spacing:.1em}
     .identity small{display:block;font-family:Consolas,monospace;font-size:9px;letter-spacing:.18em;color:var(--muted);margin-top:4px}
+    .identity-lockup{display:block}
+    .identity-wordmark{display:block;width:160px;height:auto;aspect-ratio:209/39;filter:invert(1)}
+    .identity-lockup small{font-size:8px;letter-spacing:.09em;margin-top:7px}
+    html[data-theme="day"] .identity-wordmark{filter:none}
+    @media(max-width:620px){.identity-wordmark{width:132px}.identity-lockup small{font-size:7px;letter-spacing:.03em}}
+    @media print{.identity-wordmark{width:130px;filter:none!important}}
     .nav{display:flex;align-items:center;gap:25px;margin-left:auto}
     .nav a{font-size:12px;color:var(--muted);padding:8px 0;border-bottom:1px solid transparent}
     .nav a:hover{color:var(--text);border-color:var(--text)}

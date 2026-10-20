@@ -1,4 +1,6 @@
-# Raja Uda Wellness Studio
+# Mekansm
+
+Mekansm is the studio name. The public concept, private Business page and sign-in share the app’s original dot-matrix wordmark and M symbol in `assets/brand/`. Raja Uda remains the location. Existing deployment URLs and business access settings remain in use.
 
 Public studio concept: https://handc-business-summary.vercel.app/
 
@@ -44,7 +46,7 @@ The access tests check sign-in, signed-out denial, session expiry and tampering,
 
 ## Financial planner
 
-The planner models the HandC app’s six pass prices alongside estimated juice, merchandise and event sales. Annual founding passes are collected once at opening and allocated over twelve months for earned-revenue reporting. Monthly cash sales exclude those advance receipts. The RM500k proposed founder capital is separate from customer payments.
+The planner models the Mekansm app’s six pass prices alongside estimated juice, merchandise and event sales. Annual founding passes are collected once at opening and allocated over twelve months for earned-revenue reporting. Monthly cash sales exclude those advance receipts. The RM500k proposed founder capital is separate from customer payments.
 
 Defaults estimate RM448,800 opening costs and RM39,769 fixed monthly bills. Opening plus a three-month fixed-cost buffer totals about RM568,108. Equipment, lease, demand, staffing and occupancy need validation. Supplier costs are allowances, not quotes; demo app sales are not used as evidence of demand.
 

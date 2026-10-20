@@ -10,7 +10,7 @@ async function start(){
   }else access=JSON.parse(await fs.readFile(accessPath,'utf8'));
   const business=createHandler({passwordHash:access.passwordHash,sessionSecret:access.sessionSecret,secure:false});
   const staticDir=path.join(__dirname,'public');
-  const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.png':'image/png','.pdf':'application/pdf'};
+  const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'application/javascript; charset=utf-8','.png':'image/png','.pdf':'application/pdf','.svg':'image/svg+xml'};
   const server=http.createServer(async(req,res)=>{
     const url=new URL(req.url,'http://localhost');
     if(url.pathname==='/api/business'||url.pathname==='/business'||url.pathname==='/business/'||url.pathname.startsWith('/business/')){
